@@ -20,7 +20,7 @@ def create():
         print(request.files.keys())
         rec_id = request.form.get("uuid")
         desc = request.form.get("text")
-
+        
         for key,value in request.files.items():
             print(key,value)
             # upload the file
